@@ -1,3 +1,8 @@
+var scrollToSection = function(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+      });
+}
 document.addEventListener("DOMContentLoaded", function () {
 
   window.onload = function () {
@@ -7,11 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("about").classList.remove("hidden");
   };
 
-var scrollToSection = function(id) {
-    document.getElementById(id).scrollIntoView({
-        behavior: 'smooth'
-      });
-}
 
 // Main Carousel in landing page
 const images = [
