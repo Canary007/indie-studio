@@ -113,9 +113,23 @@
         </div>
       </div>
     </nav>
+    <div id="loading-spinner">
+      <div class="typing-indicator">
+        <div class="typing-circle"></div>
+        <div class="typing-circle"></div>
+        <div class="typing-circle"></div>
+        <div class="typing-shadow"></div>
+        <div class="typing-shadow"></div>
+        <div class="typing-shadow"></div>
+      </div>
+    </div>
 
     <!-- Main Carousel -->
-    <div class="carousel relative container mx-auto" style="max-width: 1600px">
+    <div
+      id="content"
+      class="carousel relative container mx-auto hidden"
+      style="max-width: 1600px"
+    >
       <div
         class="carousel-inner relative overflow-hidden w-full"
         style="height: 50vh"
@@ -128,7 +142,7 @@
     </div>
 
     <!-- Mini Store -->
-    <section class="bg-white py-8 px-4" id="shop">
+    <section class="bg-white py-8 px-4 hidden" id="shop">
       <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
         <nav id="store" class="w-full z-30 top-0 px-6 py-1">
           <div
@@ -204,7 +218,7 @@
       </div>
     </section>
 
-    <section class="bg-white py-8" id="about">
+    <section class="bg-white py-8 hidden" id="about">
       <div class="container py-8 px-6 mx-auto">
         <a
           class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8"

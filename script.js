@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-function scrollToSection(id) {
+
+  window.onload = function () {
+    document.getElementById("loading-spinner").style.display = "none";
+    document.getElementById("content").classList.remove("hidden");
+    document.getElementById("shop").classList.remove("hidden");
+    document.getElementById("about").classList.remove("hidden");
+  };
+
+var scrollToSection = function(id) {
     document.getElementById(id).scrollIntoView({
         behavior: 'smooth'
       });
