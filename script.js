@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({
         behavior: 'smooth'
@@ -6,9 +7,9 @@ function scrollToSection(id) {
 
 // Main Carousel in landing page
 const images = [
-  {src:'assets/products/bed_covers/JKSBC01/DSC_3883.jpg', title: 'Luxury Silk Organza Double Bedcover Set in Pistachio Green'},
-  {src:'assets/products/matts/JKSM05/DSC_3804.jpg', title: 'Heritage Woollen Floor Mat — Crimson Majesty'},
-  {src:'assets/products/wall_hangings/DSC_3235.JPG', title: 'Woollen Wall Hanging – Enchanted Aviary'},
+  {src:'./assets/products/bed_covers/JKSBC01/DSC_3883.jpg', title: 'Luxury Silk Organza Double Bedcover Set in Pistachio Green'},
+  {src:'./assets/products/matts/JKSM05/DSC_3804.jpg', title: 'Heritage Woollen Floor Mat — Crimson Majesty'},
+  {src:'./assets/products/wall_hangings/DSC_3235.JPG', title: 'Woollen Wall Hanging – Enchanted Aviary'},
 ];
 
 const carouselContainer = document.getElementById('carouselContainer');
@@ -60,14 +61,14 @@ const carouselContainer = document.getElementById('carouselContainer');
 
 // Mini Store Items
 const products = [
-  {src:'assets/products/bed_covers/JKSBC02/DSC_3906.jpg', title: 'A', link: '#', price: '2,700 INR'},
-  {src:'assets/products/matts/JKSM02/DSC_3226.JPG', title: 'B', link: '#', price: '2,700 INR'},
-  {src:'assets/products/pillow_covers/DSC_3_bggg802.jpg', title: 'C', link: '#', price: '2,700 INR'},
-  {src:'assets/products/table_runners/JKSTR01/DSC_3870.JPG', title: 'D', link: '#', price: '2,700 INR'},
-  {src:'assets/products/wall_hangings/JKSWH02/JKSWH02~2(1).jpg', title: 'E', link: '#', price: '2,700 INR'},
-  {src:'assets/products/matts/JKSM11/DSC_3229.JPG', title: 'F', link: '#', price: '2,700 INR'},
-  {src:'assets/products/wall_hangings/DSC_3236.JPG', title: 'G', link: '#', price: '2,700 INR'},
-  {src:'assets/products/bed_covers/JKSBC03/DSC_3893.jpg', title: 'H', link: '#', price: '2,700 INR'},
+  {src:'./assets/products/bed_covers/JKSBC02/DSC_3906.jpg', title: 'A', link: '#', price: '2,700 INR'},
+  {src:'./assets/products/matts/JKSM02/DSC_3226.JPG', title: 'B', link: '#', price: '2,700 INR'},
+  {src:'./assets/products/pillow_covers/DSC_3_bggg802.jpg', title: 'C', link: '#', price: '2,700 INR'},
+  {src:'./assets/products/table_runners/JKSTR01/DSC_3870.JPG', title: 'D', link: '#', price: '2,700 INR'},
+  {src:'./assets/products/wall_hangings/JKSWH02/JKSWH02~2(1).jpg', title: 'E', link: '#', price: '2,700 INR'},
+  {src:'./assets/products/matts/JKSM11/DSC_3229.JPG', title: 'F', link: '#', price: '2,700 INR'},
+  {src:'./assets/products/wall_hangings/DSC_3236.JPG', title: 'G', link: '#', price: '2,700 INR'},
+  {src:'./assets/products/bed_covers/JKSBC03/DSC_3893.jpg', title: 'H', link: '#', price: '2,700 INR'},
 ];
 
 const storeContainer = document.getElementById('storeContainer');
@@ -98,4 +99,4 @@ products.forEach(product => {
   `
   storeContainer.appendChild(productElement);
 });
-
+});
